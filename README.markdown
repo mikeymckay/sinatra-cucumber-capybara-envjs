@@ -42,4 +42,14 @@ The javascript that does this is:
        });
      });
 
+The Sinatra routes look like this:
+
+    get '/' do
+      erb :home
+    end
+
+    get '/ajax' do
+      'Ooh dynamically loaded text'
+    end
+
 Nothing fancy, but it took a while to get it all working, so I thought I would share in case it helps someone else out.
